@@ -6,14 +6,13 @@ public class Task {
     private String description;
     private Boolean finished;
     private int id;
-    private static int staticId = 1;
 
-    public Task(String title, String description, Boolean finished){
+    public Task(String title, String description, Boolean finished, int id){
         this.title = title;
         this.description = description;
         this.finished = finished;
-        this.id = staticId;
-        this.staticId++;
+        this.id = id;
+
     }
 
     public String getTitle() {
